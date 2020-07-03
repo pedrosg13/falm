@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.es.falm.repository.EquipoFalmRepositoryITTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.058 s <<< FAILURE! - in com.es.falm.repository.EquipoFalmRepositoryITTest
+test  Time elapsed: 0.04 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.es.falm.repository.EquipoFalmRepositoryITTest.test(EquipoFalmRepositoryITTest.java:59)
+
