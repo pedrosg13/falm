@@ -11,9 +11,7 @@ public class JugadorDto {
 
 	private String apellidos;	
 	
-	private int numero;	
-
-	private String equipoFalm;
+	private EquipoFalmDto equipoFalm;
 	
 	private String equipo;	
 	

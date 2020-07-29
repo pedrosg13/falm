@@ -9,8 +9,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
-import com.es.falm.domain.PosicionEnum;
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -38,7 +36,7 @@ public class Jugador {
 	private String equipo;
 	
 	@Column
-	private PosicionEnum posicion;
+	private String posicion;
 	
 	@Column
 	private Double precio;	

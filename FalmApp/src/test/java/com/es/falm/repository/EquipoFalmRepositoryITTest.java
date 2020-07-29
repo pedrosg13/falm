@@ -13,7 +13,6 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.es.falm.domain.EquiposEnum;
-import com.es.falm.domain.PosicionEnum;
 import com.es.falm.entity.EquipoFalm;
 import com.es.falm.entity.Jugador;
 import com.es.falm.entity.Usuario;
@@ -54,7 +53,7 @@ class EquipoFalmRepositoryITTest {
 		Jugador jugador= new Jugador();
 		jugador.setNombre("Pacheco");
 		jugador.setEquipo(EquiposEnum.Alaves.name());
-		jugador.setPosicion(PosicionEnum.PORTERO);
+		jugador.setPosicion("PORTERO");
 		jugador.setPrecio(10.0);
 		jugador.setEquipoFalm(equipo);			
 		
