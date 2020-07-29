@@ -10,9 +10,7 @@ import com.es.falm.entity.Jugador;
 
 @Repository
 public interface JugadorRepository extends JpaRepository<Jugador,Integer>{
-	
-	public List<Jugador> findByNombreIgnoreCaseOrApellidosIgnoreCase(String nombre,String apellidos);
-	
+
 	public List<Jugador> findByEquipoFalm(EquipoFalm equipo);	
 	
 

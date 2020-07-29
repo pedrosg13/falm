@@ -50,7 +50,7 @@ public class Jugador {
 	private int goles;
 	
 	@Column
-	private int expusiones;	
+	private int expulsiones;	
 	
 	@Column
 	private int estrellas;	
