@@ -24,7 +24,7 @@ public class Usuario {
 	private int idUsuario;
 	
 	@Column
-	private String name;
+	private String nombre;
 	
 	@Column
 	private String password;
