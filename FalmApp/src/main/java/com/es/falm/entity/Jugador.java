@@ -31,12 +31,6 @@ public class Jugador {
 	@Column
 	private String nombre;
 	
-	@Column
-	private String apellidos;
-	
-	@Column
-	private int numero;
-	
 	@ManyToOne(targetEntity = EquipoFalm.class,fetch = FetchType.EAGER,cascade = CascadeType.ALL)
 	private EquipoFalm equipoFalm;
 	
