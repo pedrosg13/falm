@@ -36,11 +36,11 @@ class JornadaRepositoryITTest {
 		equipoLocal.setNombre("GOLDENBOYS");		
 		ArrayList<Usuario> usuariosEquipoLocal= new ArrayList<Usuario>();		
 		Usuario user1= new Usuario();
-		user1.setName("JJ");
+		user1.setNombre("JJ");
 		user1.setPassword("JJ");
 		user1.setEquipo(equipoLocal);		
 		Usuario user2= new Usuario();
-		user2.setName("Alfonso");
+		user2.setNombre("Alfonso");
 		user2.setPassword("Alfonso");
 		user2.setEquipo(equipoLocal);
 		equipoLocal.setUsuarios(usuariosEquipoLocal);
@@ -49,8 +49,8 @@ class JornadaRepositoryITTest {
 		equipoVisitante.setNombre("XAVALEO");		
 		ArrayList<Usuario> usuariosEquipoVisitante= new ArrayList<Usuario>();		
 		Usuario user3= new Usuario();
-		user3.setName("Patri");
-		user3.setPassword("PAtri");
+		user3.setNombre("Patri");
+		user3.setPassword("Patri");
 		user3.setEquipo(equipoLocal);		
 		equipoVisitante.setUsuarios(usuariosEquipoVisitante);
 		

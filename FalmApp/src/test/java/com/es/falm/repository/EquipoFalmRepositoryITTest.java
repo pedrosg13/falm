@@ -38,12 +38,12 @@ class EquipoFalmRepositoryITTest {
 
 		ArrayList<Usuario> usuarios= new ArrayList<Usuario>();		
 		Usuario user1= new Usuario();
-		user1.setName("JJ");
+		user1.setNombre("JJ");
 		user1.setPassword("JJ");
 		user1.setEquipo(equipo);
 		
 		Usuario user2= new Usuario();
-		user2.setName("Alfonso");
+		user2.setNombre("Alfonso");
 		user2.setPassword("Alfonso");
 		user2.setEquipo(equipo);
 		
