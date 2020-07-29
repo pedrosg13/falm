@@ -12,31 +12,31 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
 @Entity
 @Table(name = "equiposfalm")
+@NoArgsConstructor
+@AllArgsConstructor
 public class EquipoFalm {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column
 	private int id;
 	
 	@Column
-	private String nombre;
+	private String nombre;	
 	
-	@OneToMany(targetEntity = Jugador.class,fetch = FetchType.EAGER,cascade = CascadeType.ALL)
-	private List<Jugador> jugadores;
+	@Column(nullable = true)
+	private Double puntuacionTotal;
 	
-	@Column
-	private double puntuacionTotal;
-	
-	@Column
-	private double beneficio;
+	@Column(nullable = true)
+	private Double beneficio;
 	
 	@OneToMany(targetEntity = Usuario.class,cascade = CascadeType.ALL)
 	private List<Usuario> usuarios;	 

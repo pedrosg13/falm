@@ -1,5 +1,6 @@
 package com.es.falm.entity;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -8,20 +9,22 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
-import com.es.falm.domain.EquiposEnum;
 import com.es.falm.domain.PosicionEnum;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 
 @Getter	
 @Setter
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
 public class Jugador {
 	
 	@Id
-	@Column
 	@GeneratedValue(strategy =GenerationType.AUTO)
 	private int id;
 	
@@ -34,20 +37,20 @@ public class Jugador {
 	@Column
 	private int numero;
 	
-	@ManyToOne(targetEntity = EquipoFalm.class,fetch = FetchType.EAGER)
+	@ManyToOne(targetEntity = EquipoFalm.class,fetch = FetchType.EAGER,cascade = CascadeType.ALL)
 	private EquipoFalm equipoFalm;
-
+	
 	@Column
-	private EquiposEnum equipo;
+	private String equipo;
 	
 	@Column
 	private PosicionEnum posicion;
 	
 	@Column
-	private double precio;	
+	private Double precio;	
 	
 	@Column
-	private double puntosTotales;	
+	private Double puntosTotales;	
 	
 	@Column
 	private int goles;

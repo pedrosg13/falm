@@ -60,18 +60,16 @@ class JornadaRepositoryITTest {
 		//declaro jornada		
 		Jornada jornada= new Jornada();
 		jornada.setId(1);
-		jornada.setFecha(Calendar.getInstance().getTime());
-		
+	
 		jornadaRepository.save(jornada);
 				
 		assertEquals("1",String.valueOf(jornadaRepository.findById(1).get().getId()));
 		
 		Partido partido= new Partido();
 		partido.setJornada(jornada);
-		partido.setIdEquipoLocal(1);
-		partido.setIdEquipoLocal(equipoLocal.getId());
-		partido.setIdEquipoVisitante(equipoVisitante.getId());
-		partido.setJornada(jornada);
+		partido.setFecha(Calendar.getInstance().getTime());
+		partido.setLocal(equipoLocal);
+		partido.setVisitante(equipoVisitante);
 		
 		assertNotNull(partidoRepository.save(partido));			
 		

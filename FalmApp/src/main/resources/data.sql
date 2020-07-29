@@ -1,0 +1,10 @@
+INSERT INTO equiposfalm (beneficio, nombre) VALUES ('0', 'GOLDENBOYS');
+INSERT INTO equiposfalm (beneficio, nombre) VALUES ('0', 'CHANATINAIKOS');
+INSERT INTO equiposfalm (beneficio, nombre) VALUES ('0', 'CHARLETICO');
+INSERT INTO equiposfalm (beneficio, nombre) VALUES ('0', 'GAYATASARAY');
+INSERT INTO equiposfalm (beneficio, nombre) VALUES ('0', 'MANCHISTER');
+INSERT INTO equiposfalm (beneficio, nombre) VALUES ('0', 'CLEOTEBORG');
+INSERT INTO equiposfalm (beneficio, nombre) VALUES ('0', 'KALIKEÑOS');
+INSERT INTO equiposfalm (beneficio, nombre) VALUES ('0', 'XAVALEO');
+INSERT INTO equiposfalm (beneficio, nombre) VALUES ('0', 'GOURMET');
+INSERT INTO equiposfalm (beneficio, nombre) VALUES ('0', 'BABUSIANOS');

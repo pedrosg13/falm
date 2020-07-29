@@ -31,6 +31,16 @@ public enum EquiposEnum {
 	private String nombreCorto;
 	private int numeroMaximoJugadores;
 	
+	public static String getEnumByString(String code){
+	      
+		for(EquiposEnum e : EquiposEnum.values()){
+	            if(e.nombreCorto.equals(code)) {
+	            	return e.name();
+	            }
+	        }
+	    return null;
+	}
+	
 }
 
 

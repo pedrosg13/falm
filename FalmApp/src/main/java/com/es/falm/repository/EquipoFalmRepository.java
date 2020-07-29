@@ -8,4 +8,6 @@ import com.es.falm.entity.EquipoFalm;
 @Repository
 public interface EquipoFalmRepository extends JpaRepository<EquipoFalm,Integer>{	
 	
+	public EquipoFalm findByNombre(String nombre);
+	
 }

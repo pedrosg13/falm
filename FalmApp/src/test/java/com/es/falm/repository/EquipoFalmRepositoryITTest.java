@@ -1,6 +1,7 @@
 package com.es.falm.repository;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -52,19 +53,14 @@ class EquipoFalmRepositoryITTest {
 		
 		Jugador jugador= new Jugador();
 		jugador.setNombre("Pacheco");
-		jugador.setEquipo(EquiposEnum.Alaves);
+		jugador.setEquipo(EquiposEnum.Alaves.name());
 		jugador.setPosicion(PosicionEnum.PORTERO);
-		jugador.setPrecio(10);
-		jugador.setEquipoFalm(equipo);		
-		
-		if(equipo.getJugadores()==null) {
-			equipo.setJugadores(new ArrayList<Jugador>());
-		}
-				equipo.getJugadores().add(jugador);
+		jugador.setPrecio(10.0);
+		jugador.setEquipoFalm(equipo);			
 		
 		equipo=equipoFalmRepository.save(equipo);
 		
-		assertEquals(1, equipoFalmRepository.findAll().size());	
+		assertEquals(11, equipoFalmRepository.findAll().size());	
 		assertEquals(2, usuarioRepository.findAll().size());			
 				
 		//recuperar jugadores equipo	
@@ -79,5 +75,13 @@ class EquipoFalmRepositoryITTest {
 		
 	}
 
+	
+	@Test
+	void testFindByNombre() {
+		
+		assertNotNull(equipoFalmRepository.findByNombre("GOLDENBOYS"));	
+		
+	}
+		
 
 }
