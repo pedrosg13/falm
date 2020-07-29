@@ -67,11 +67,7 @@ class EquipoFalmRepositoryITTest {
 		
 		List<Jugador> jugadores=jugadorRepository.findByEquipoFalm(equipo);		
 		
-		assertEquals(1, jugadores.size());			
-		
-		List<Jugador> j=jugadorRepository.findByNombreIgnoreCaseOrApellidosIgnoreCase("pacheco", "pacheco");
-		
-		assertEquals("Pacheco", j.get(0).getNombre());			
+		assertEquals(1, jugadores.size());
 		
 	}
 
